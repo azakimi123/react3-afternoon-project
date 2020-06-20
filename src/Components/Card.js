@@ -6,10 +6,10 @@ function Card(props) {
     return(
         <div>
             <h2>{props.info.firstName} {props.info.lastName}</h2>
-            <p>From: </p> <p>{props.info.city} {props.info.country}</p>
-            <p>Employer: <p>{props.info.employer}</p></p>
+            <h4>From: </h4> <p>{props.info.city} {props.info.country}</p>
+            <h4>Employer: </h4><p>{props.info.employer}</p>
             <section>
-                <h3>Favorite Movies: </h3>
+                <h4>Favorite Movies: </h4>
                 <ol>1.{props.info.favoriteMovies[0]}</ol>
                 <ol>2.{props.info.favoriteMovies[1]}</ol>
                 <ol>3.{props.info.favoriteMovies[2]}</ol>
