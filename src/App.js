@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import data from './data';
 import Card from './Components/Card';
+import NextButton from './Components/NextButton';
 import './App.css';
 
 
@@ -17,7 +18,7 @@ class App extends Component {
   }
 
   // componentDidMount() {
-  //   this.setState({myData: data})
+  //   this.setState({index: })
   // }
 
 
@@ -25,13 +26,17 @@ class App extends Component {
 
   render() {
     const mappedArr = this.state.myData.map( (info, i) => {
-      return <Card key={i} info={info}/>
+      return <Card key={i} info={info}/> 
     })
+    // console.log(mappedArr)
 
     return (
       <div className="App">
         <header>Home</header>
-        {mappedArr}
+        {/* {mappedArr[0]} */}
+        <footer>
+          <NextButton map={mappedArr}/>
+        </footer>
       </div>
     )
   }

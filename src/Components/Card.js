@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+// import NextButton from './NextButton';
 
 
 function Card(props) {
-    console.log(props)
+    // console.log(props)
     return(
         <div>
             <h2>{props.info.firstName} {props.info.lastName}</h2>
