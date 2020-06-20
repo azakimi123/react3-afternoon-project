@@ -1,53 +1,8 @@
-// const data = `[
-//   {
-//     'id': 1,
-//     'name': { first: "Waylin", last: "Lumsdon" },
-//     'city': "Likiep",
-//     'country': "Marshall Islands",
-//     'employer': "Twinder",
-//     'title': "Physical Therapy Assistant",
-//     'favoriteMovies': [
-//       "That Night in Varennes (Nuit de Varennes, La)",
-//       "Spy(ies) (Espion(s))",
-//       "Klip (Clip)"
-//     ]
-//   },
-//   {
-//     'id': 2,
-//     'name': { first: "Hastie", last: "Beardsdale" },
-//     'city': "Dzvinogrud",
-//     'country': "Ukraine",
-//     'employer': "Vinte",
-//     'title': "Data Coordiator",
-//     'favoriteMovies': [
-//       "Camp",
-//       "Her Highness and the Bellboy",
-//       "Mona and the Time of Burning Love (Mona ja palavan rakkauden aika))"
-//     ]
-//   },
-//   {
-//     'id': 3,
-//     'name': { first: "Hyacinth", last: "Spiller" },
-//     'city': "Gaxung",
-//     'country': "China",
-//     'employer': "Kanoodle",
-//     'title': "Operator",
-//     'favoriteMovies': [
-//       "Trojan War",
-//       "Fall of the Republic: The Presidency of Barack H. Obama",
-//       "Four Sahibjade"
-//     ]
-//   }]`
-
-  
-
-
-
-
-const data = [
+ const data = [
   {
     id: 1,
-    name: { first: "Waylin", last: "Lumsdon" },
+    firstName: "Waylin",
+    lastName: "Lumsdon" ,
     city: "Likiep",
     country: "Marshall Islands",
     employer: "Twinder",
@@ -60,7 +15,8 @@ const data = [
   },
   {
     id: 2,
-    name: { first: "Hastie", last: "Beardsdale" },
+    firstName: "Hastie",
+    lastName: "Beardsdale",
     city: "Dzvinogrud",
     country: "Ukraine",
     employer: "Vinte",
@@ -73,7 +29,8 @@ const data = [
   },
   {
     id: 3,
-    name: { first: "Hyacinth", last: "Spiller" },
+    firstName: "Hyacinth", 
+    lastName: "Spiller",
     city: "Gaxung",
     country: "China",
     employer: "Kanoodle",
@@ -86,7 +43,8 @@ const data = [
   },
   {
     id: 4,
-    name: { first: "Drusi", last: "Gainsborough" },
+    firstName: "Drusi",  
+    lastName: "Gainsborough",
     city: "Chupa",
     country: "Russia",
     employer: "Skivee",
@@ -99,7 +57,8 @@ const data = [
   },
   {
     id: 5,
-    name: { first: "Hirsch", last: "Pywell" },
+    firstName: "Hirsch", 
+    lastName: "Pywell",
     city: "Anopog",
     country: "Philippines",
     employer: "Topiczoom",
@@ -112,7 +71,8 @@ const data = [
   },
   {
     id: 6,
-    name: { first: "Worthington", last: "Langfat" },
+    firstName: "Worthington",
+    lastName: "Langfat",
     city: "Utena",
     country: "Lithuania",
     employer: "Npath",
@@ -121,7 +81,8 @@ const data = [
   },
   {
     id: 7,
-    name: { first: "Field", last: "Frawley" },
+    firstName: "Field",
+    lastName: "Frawley",
     city: "Soio",
     country: "Angola",
     employer: "Voonyx",
@@ -130,7 +91,8 @@ const data = [
   },
   {
     id: 8,
-    name: { first: "Jolyn", last: "Ubank" },
+    firstName: "Jolyn",
+    lastName: "Ubank",
     city: "Aviá Terai",
     country: "Argentina",
     employer: "Eabox",
@@ -143,7 +105,8 @@ const data = [
   },
   {
     id: 9,
-    name: { first: "Marion", last: "Santori" },
+    firstName: "Marion",
+    lastName: "Santori",
     city: "Liverpool",
     country: "United Kingdom",
     employer: "Skinix",
@@ -152,7 +115,8 @@ const data = [
   },
   {
     id: 10,
-    name: { first: "Perri", last: "Koopman" },
+    firstName: "Perri",
+    lastName: "Koopman",
     city: "Isoka",
     country: "Zambia",
     employer: "Jayo",
@@ -165,7 +129,8 @@ const data = [
   },
   {
     id: 11,
-    name: { first: "Danit", last: "Berg" },
+    firstName: "Danit",
+    lastName: "Berg",
     city: "New York City",
     country: "United States",
     employer: "Gabcube",
@@ -174,7 +139,8 @@ const data = [
   },
   {
     id: 12,
-    name: { first: "Hadlee", last: "Piolli" },
+    firstName: "Hadlee",
+    lastName: "Piolli",
     city: "Nkurenkuru",
     country: "Namibia",
     employer: "Rhybox",
@@ -183,7 +149,8 @@ const data = [
   },
   {
     id: 13,
-    name: { first: "Trev", last: "Upwood" },
+    firstName:"Trev",
+    lastName: "Upwood",
     city: "Santa Elena",
     country: "Mexico",
     employer: "Devpoint",
@@ -192,7 +159,8 @@ const data = [
   },
   {
     id: 14,
-    name: { first: "Dex", last: "Mirando" },
+    firstName: "Dex",
+    lastName: "Mirando",
     city: "Issia",
     country: "Ivory Coast",
     employer: "Quinu",
@@ -205,7 +173,8 @@ const data = [
   },
   {
     id: 15,
-    name: { first: "Say", last: "Gooderick" },
+    firstName: "Say",
+    lastName: "Gooderick",
     city: "Lousado",
     country: "Portugal",
     employer: null,
@@ -214,7 +183,8 @@ const data = [
   },
   {
     id: 16,
-    name: { first: "Shirlee", last: "Senyard" },
+    firstName: "Shirlee",
+    lastName: "Senyard",
     city: "Makrochóri",
     country: "Greece",
     employer: "Zoomlounge",
@@ -223,7 +193,8 @@ const data = [
   },
   {
     id: 17,
-    name: { first: "Brenna", last: "Wardell" },
+    firstName: "Brenna",
+    lastName: "Wardell",
     city: "Slavyansk-na-Kubani",
     country: "Russia",
     employer: "Meedoo",
@@ -236,7 +207,8 @@ const data = [
   },
   {
     id: 18,
-    name: { first: "Moshe", last: "Fatkin" },
+    firstName: "Moshe",
+    lastName: "Fatkin",
     city: "Pojan",
     country: "Albania",
     employer: "Babbleopia",
@@ -245,7 +217,8 @@ const data = [
   },
   {
     id: 19,
-    name: { first: "Dari", last: "Lomasny" },
+    firstName: "Dari",
+    lastName: "Lomasny",
     city: "Aghavnadzor",
     country: "Armenia",
     employer: "Lazzy",
@@ -258,7 +231,8 @@ const data = [
   },
   {
     id: 20,
-    name: { first: "Adena", last: "Colbrun" },
+    firstName: "Adena",
+    lastName: "Colbrun",
     city: "Seres",
     country: "Philippines",
     employer: "Jabbercube",
@@ -267,7 +241,8 @@ const data = [
   },
   {
     id: 21,
-    name: { first: "Orelie", last: "Reside" },
+    firstName: "Orelie",
+    lastName: "Reside",
     city: "Sukpak",
     country: "Russia",
     employer: "Oyoloo",
@@ -280,7 +255,8 @@ const data = [
   },
   {
     id: 22,
-    name: { first: "Fraser", last: "Furnival" },
+    firstName: "Fraser",
+    lastName: "Furnival",
     city: "Damaishan",
     country: "China",
     employer: "Viva",
@@ -293,7 +269,8 @@ const data = [
   },
   {
     id: 23,
-    name: { first: "Darryl", last: "Sarle" },
+    firstName: "Darryl",
+    lastName: "Sarle",
     city: "Szydłowo",
     country: "Poland",
     employer: "Linktype",
@@ -306,7 +283,8 @@ const data = [
   },
   {
     id: 24,
-    name: { first: "Cecilius", last: "Barrabeale" },
+    firstName: "Cecilius",
+    lastName: "Barrabeale",
     city: "Tangtou",
     country: "China",
     employer: "Feedfire",
@@ -319,7 +297,8 @@ const data = [
   },
   {
     id: 25,
-    name: { first: "Mikaela", last: "Jeannequin" },
+    firstName: "Mikaela", 
+    lastName: "Jeannequin",
     city: "Tha Maka",
     country: "Thailand",
     employer: null,
