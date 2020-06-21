@@ -57,8 +57,8 @@ class NextButton extends Component{
         console.log(this.state.index)
         return (
             <div>
-                <h3>{this.state.displayCurrentIndex} / {this.state.displayTotalIndex}</h3>
-                <section>{this.state.peopleArr[this.state.index]}</section>
+                <h3 classId='counter'>{this.state.displayCurrentIndex} / {this.state.displayTotalIndex}</h3>
+                <section className='App'>{this.state.peopleArr[this.state.index]}</section>
                 <button onClick={this.handlePrevious}>Previous</button>
                 <button onClick={this.handleNext}>Next</button>
             </div>

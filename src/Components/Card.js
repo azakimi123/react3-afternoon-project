@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 function Card(props) {
     // console.log(props)
     return(
-        <div>
+        <div className='card'>
             <h2>{props.info.firstName} {props.info.lastName}</h2>
             <h4>From: </h4> <p>{props.info.city} {props.info.country}</p>
             <h4>Employer: </h4><p>{props.info.employer}</p>

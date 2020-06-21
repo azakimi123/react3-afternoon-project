@@ -32,8 +32,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header>Home</header>
-        {/* {mappedArr[0]} */}
+        <header>
+          <p className='home'>Home</p>
+        </header>
         <footer>
           <NextButton map={mappedArr}/>
         </footer>
