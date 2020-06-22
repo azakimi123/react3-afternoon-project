@@ -1,14 +1,13 @@
 .App {
   width: 100vw;
-  height: calc(100vh - 100px);
-
+  height: 80vh;
   background: black;
 }
 
 
 header {
   background-color: #5eaae9;
-  height: 100px;
+  height: 15vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -18,7 +17,6 @@ header {
 
 footer {
   width: 100vw;
-  height: 10vh;
   background: black;
 }
 
@@ -31,15 +29,55 @@ footer {
 }
 
 .card {
-  width: 1200px;
-  height: 500px;
+  width: 1250px;
+  height: 450px;
   background: white;
-  display:flex;
-  flex-direction: column;
+  /* display:flex; */
+  /* flex-direction: column; */
   position: relative;
   left: 100px;
 }
 
-#counter{
+.inner-text {
+  position: relative;
+  left: 100px;
+  top:40px;
+}
+
+.counter{
+  width: 150px;
+  height: 30px;
+  color:black;
+  font-size: 30px;
+  position: relative;
+  left: 1235px;
+  top: 70px;
+  z-index: 2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#button1 {
   color: white;
+  background: black;
+  position: relative;
+  bottom: 100px;
+  font-size: 25px;
+  border: none;
+  position: relative;
+  left: 100px;
+}
+
+#button2 {
+  color: white;
+  background: black;
+  position: relative;
+  bottom: 100px;
+  font-size: 25px;
+  border: none;
+  position: relative;
+  right: 100px;
 }

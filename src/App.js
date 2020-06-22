@@ -36,7 +36,7 @@ class App extends Component {
           <p className='home'>Home</p>
         </header>
         <footer>
-          <NextButton map={mappedArr}/>
+          <NextButton className='button' map={mappedArr}/>
         </footer>
       </div>
     )
