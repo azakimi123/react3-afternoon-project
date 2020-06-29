@@ -38,6 +38,12 @@ footer {
   left: 100px;
 }
 
+.person-name {
+  text-decoration: underline;
+  text-decoration-color: #5eaae9;
+
+}
+
 .inner-text {
   position: relative;
   left: 100px;
