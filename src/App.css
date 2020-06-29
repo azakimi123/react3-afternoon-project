@@ -1,13 +1,14 @@
 .App {
   width: 100vw;
-  height: 80vh;
+  height: 72vh;
   background: black;
+  /* overflow: hidden; */
 }
 
 
 header {
   background-color: #5eaae9;
-  height: 15vh;
+  height: 13vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -17,6 +18,7 @@ header {
 
 footer {
   width: 100vw;
+  /* height: 50px; */
   background: black;
 }
 
@@ -73,6 +75,16 @@ footer {
 .button-container {
   display: flex;
   justify-content: space-between;
+}
+
+.delete-button{
+  width: 95px;
+  font-size: 25px;
+  position: relative;
+  bottom: 100px;
+  background: rgb(72, 197, 255);
+  border: none;
+  border-radius: 10%;
 }
 
 #button1 {
