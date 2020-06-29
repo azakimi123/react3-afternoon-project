@@ -19,17 +19,11 @@ class NextButton extends Component{
 
 
     handleNext() {
-        if(this.state.index === 24) {
-            this.state.index = 0;
-            this.displayCurrentIndex = 1;
+        if(this.state.index >= 0 && this.state.index < 24) {
+            this.setState({index: this.state.index += 1, displayCurrentIndex: this.state.displayCurrentIndex += 1});
         } else {
-            this.state.index += 1;
-            this.state.displayCurrentIndex += 1;
+            this.setState({index: 0, displayCurrentIndex: 1});
         }
-        this.setState({
-            index: this.state.index,
-            displayCurrentIndex: this.state.displayCurrentIndex
-        })
     }
 
     handlePrevious() {
