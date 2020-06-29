@@ -44,11 +44,20 @@ footer {
 
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.movies {
+  margin-top: 50px;
+  line-height: 10px;
+}
 .inner-text {
   position: relative;
   left: 100px;
   top:40px;
 }
+
 
 .counter{
   width: 150px;
